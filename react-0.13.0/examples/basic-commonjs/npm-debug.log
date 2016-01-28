@@ -1,0 +1,276 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.5
+4 verbose readDependencies loading dependencies from /Users/zyma/Desktop/react-0.13.0/examples/basic-commonjs/package.json
+5 warn package.json react-basic-commonjs-example@ No repository field.
+6 verbose install where, deps [ '/Users/zyma/Desktop/react-0.13.0/examples/basic-commonjs',
+6 verbose install   [ 'browserify', 'envify', 'react', 'reactify' ] ]
+7 verbose install where, peers [ '/Users/zyma/Desktop/react-0.13.0/examples/basic-commonjs',
+7 verbose install   [] ]
+8 verbose installManyTop reading for lifecycle /Users/zyma/Desktop/react-0.13.0/examples/basic-commonjs/package.json
+9 info preinstall react-basic-commonjs-example@
+10 verbose readDependencies loading dependencies from /Users/zyma/Desktop/react-0.13.0/examples/basic-commonjs/package.json
+11 silly cache add args [ 'browserify@^6.3.3', null ]
+12 verbose cache add spec browserify@^6.3.3
+13 silly cache add args [ 'envify@^3.2.0', null ]
+14 verbose cache add spec envify@^3.2.0
+15 silly cache add parsed spec Result {
+15 silly cache add   raw: 'browserify@^6.3.3',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'browserify',
+15 silly cache add   rawSpec: '^6.3.3',
+15 silly cache add   spec: '>=6.3.3 <7.0.0',
+15 silly cache add   type: 'range' }
+16 silly addNamed browserify@>=6.3.3 <7.0.0
+17 verbose addNamed ">=6.3.3 <7.0.0" is a valid semver range for browserify
+18 silly addNameRange { name: 'browserify', range: '>=6.3.3 <7.0.0', hasData: false }
+19 silly mapToRegistry name browserify
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/browserify
+23 verbose addNameRange registry:https://registry.npmjs.org/browserify not in flight; fetching
+24 silly cache add parsed spec Result {
+24 silly cache add   raw: 'envify@^3.2.0',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'envify',
+24 silly cache add   rawSpec: '^3.2.0',
+24 silly cache add   spec: '>=3.2.0 <4.0.0',
+24 silly cache add   type: 'range' }
+25 silly addNamed envify@>=3.2.0 <4.0.0
+26 verbose addNamed ">=3.2.0 <4.0.0" is a valid semver range for envify
+27 silly addNameRange { name: 'envify', range: '>=3.2.0 <4.0.0', hasData: false }
+28 silly mapToRegistry name envify
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry uri https://registry.npmjs.org/envify
+32 verbose addNameRange registry:https://registry.npmjs.org/envify not in flight; fetching
+33 silly cache add args [ 'react@^0.13.0', null ]
+34 verbose cache add spec react@^0.13.0
+35 silly cache add parsed spec Result {
+35 silly cache add   raw: 'react@^0.13.0',
+35 silly cache add   scope: null,
+35 silly cache add   name: 'react',
+35 silly cache add   rawSpec: '^0.13.0',
+35 silly cache add   spec: '>=0.13.0 <0.14.0',
+35 silly cache add   type: 'range' }
+36 silly addNamed react@>=0.13.0 <0.14.0
+37 verbose addNamed ">=0.13.0 <0.14.0" is a valid semver range for react
+38 silly addNameRange { name: 'react', range: '>=0.13.0 <0.14.0', hasData: false }
+39 silly mapToRegistry name react
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry uri https://registry.npmjs.org/react
+43 verbose addNameRange registry:https://registry.npmjs.org/react not in flight; fetching
+44 silly cache add args [ 'reactify@^0.17.1', null ]
+45 verbose cache add spec reactify@^0.17.1
+46 silly cache add parsed spec Result {
+46 silly cache add   raw: 'reactify@^0.17.1',
+46 silly cache add   scope: null,
+46 silly cache add   name: 'reactify',
+46 silly cache add   rawSpec: '^0.17.1',
+46 silly cache add   spec: '>=0.17.1 <0.18.0',
+46 silly cache add   type: 'range' }
+47 silly addNamed reactify@>=0.17.1 <0.18.0
+48 verbose addNamed ">=0.17.1 <0.18.0" is a valid semver range for reactify
+49 silly addNameRange { name: 'reactify', range: '>=0.17.1 <0.18.0', hasData: false }
+50 silly mapToRegistry name reactify
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/reactify
+54 verbose addNameRange registry:https://registry.npmjs.org/reactify not in flight; fetching
+55 verbose request uri https://registry.npmjs.org/browserify
+56 verbose request no auth needed
+57 info attempt registry request try #1 at 2:09:37 PM
+58 verbose request id 20b25482ca1a27ae
+59 http request GET https://registry.npmjs.org/browserify
+60 verbose request uri https://registry.npmjs.org/reactify
+61 verbose request no auth needed
+62 info attempt registry request try #1 at 2:09:37 PM
+63 http request GET https://registry.npmjs.org/reactify
+64 verbose request uri https://registry.npmjs.org/envify
+65 verbose request no auth needed
+66 info attempt registry request try #1 at 2:09:37 PM
+67 verbose etag "3X92UEGF0HP3DQ8KW7LMQ2IJ2"
+68 http request GET https://registry.npmjs.org/envify
+69 verbose request uri https://registry.npmjs.org/react
+70 verbose request no auth needed
+71 info attempt registry request try #1 at 2:09:37 PM
+72 verbose etag "4GCRW7PRWR0IDU9ITLTFRWQHE"
+73 http request GET https://registry.npmjs.org/react
+74 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+75 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+76 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+77 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+78 info attempt registry request try #2 at 2:11:02 PM
+79 http request GET https://registry.npmjs.org/reactify
+80 info attempt registry request try #2 at 2:11:02 PM
+81 http request GET https://registry.npmjs.org/browserify
+82 info attempt registry request try #2 at 2:11:02 PM
+83 verbose etag "4GCRW7PRWR0IDU9ITLTFRWQHE"
+84 http request GET https://registry.npmjs.org/react
+85 info attempt registry request try #2 at 2:11:02 PM
+86 verbose etag "3X92UEGF0HP3DQ8KW7LMQ2IJ2"
+87 http request GET https://registry.npmjs.org/envify
+88 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+89 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+90 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+91 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+92 info attempt registry request try #3 at 2:13:17 PM
+93 http request GET https://registry.npmjs.org/reactify
+94 info attempt registry request try #3 at 2:13:17 PM
+95 http request GET https://registry.npmjs.org/browserify
+96 info attempt registry request try #3 at 2:13:17 PM
+97 verbose etag "3X92UEGF0HP3DQ8KW7LMQ2IJ2"
+98 http request GET https://registry.npmjs.org/envify
+99 info attempt registry request try #3 at 2:13:17 PM
+100 verbose etag "4GCRW7PRWR0IDU9ITLTFRWQHE"
+101 http request GET https://registry.npmjs.org/react
+102 silly get cb [ 304, undefined ]
+103 verbose etag https://registry.npmjs.org/envify from cache
+104 verbose get saving envify to /Users/zyma/.npm/registry.npmjs.org/envify/.cache.json
+105 silly get cb [ 304, undefined ]
+106 verbose etag https://registry.npmjs.org/react from cache
+107 verbose get saving react to /Users/zyma/.npm/registry.npmjs.org/react/.cache.json
+108 silly addNameRange number 2 { name: 'envify', range: '>=3.2.0 <4.0.0', hasData: true }
+109 silly addNameRange versions [ 'envify',
+109 silly addNameRange   [ '0.0.1',
+109 silly addNameRange     '0.1.0',
+109 silly addNameRange     '0.2.0',
+109 silly addNameRange     '1.0.0',
+109 silly addNameRange     '1.0.1',
+109 silly addNameRange     '1.1.0',
+109 silly addNameRange     '1.2.0',
+109 silly addNameRange     '1.2.1',
+109 silly addNameRange     '2.0.0',
+109 silly addNameRange     '2.0.1',
+109 silly addNameRange     '3.0.0',
+109 silly addNameRange     '3.1.0',
+109 silly addNameRange     '3.2.0',
+109 silly addNameRange     '3.3.0',
+109 silly addNameRange     '3.3.1',
+109 silly addNameRange     '3.4.0' ] ]
+110 silly addNamed envify@3.4.0
+111 verbose addNamed "3.4.0" is a plain semver version for envify
+112 silly addNameRange number 2 { name: 'react', range: '>=0.13.0 <0.14.0', hasData: true }
+113 silly addNameRange versions [ 'react',
+113 silly addNameRange   [ '0.0.1',
+113 silly addNameRange     '0.0.2',
+113 silly addNameRange     '0.0.3',
+113 silly addNameRange     '0.1.2',
+113 silly addNameRange     '0.2.0',
+113 silly addNameRange     '0.2.1',
+113 silly addNameRange     '0.2.2',
+113 silly addNameRange     '0.2.3',
+113 silly addNameRange     '0.2.4',
+113 silly addNameRange     '0.2.5',
+113 silly addNameRange     '0.2.6',
+113 silly addNameRange     '0.3.0',
+113 silly addNameRange     '0.3.4',
+113 silly addNameRange     '0.3.5',
+113 silly addNameRange     '0.5.0',
+113 silly addNameRange     '0.5.1',
+113 silly addNameRange     '0.5.2',
+113 silly addNameRange     '0.6.0',
+113 silly addNameRange     '0.6.1',
+113 silly addNameRange     '0.6.2',
+113 silly addNameRange     '0.6.3',
+113 silly addNameRange     '0.7.0',
+113 silly addNameRange     '0.7.1',
+113 silly addNameRange     '0.8.0',
+113 silly addNameRange     '0.9.0-rc1',
+113 silly addNameRange     '0.9.0',
+113 silly addNameRange     '0.10.0-rc1',
+113 silly addNameRange     '0.10.0',
+113 silly addNameRange     '0.11.0-rc1',
+113 silly addNameRange     '0.11.0',
+113 silly addNameRange     '0.11.1',
+113 silly addNameRange     '0.11.2',
+113 silly addNameRange     '0.12.0-rc1',
+113 silly addNameRange     '0.12.0',
+113 silly addNameRange     '0.12.1',
+113 silly addNameRange     '0.12.2',
+113 silly addNameRange     '0.13.0-alpha.1',
+113 silly addNameRange     '0.13.0-alpha.2',
+113 silly addNameRange     '0.13.0-beta.1',
+113 silly addNameRange     '0.13.0-beta.2',
+113 silly addNameRange     '0.13.0-rc1',
+113 silly addNameRange     '0.13.0-rc2',
+113 silly addNameRange     '0.13.0',
+113 silly addNameRange     '0.13.1',
+113 silly addNameRange     '0.13.2',
+113 silly addNameRange     '0.13.3',
+113 silly addNameRange     '0.14.0-alpha1',
+113 silly addNameRange     '0.14.0-alpha2',
+113 silly addNameRange     '0.14.0-alpha3',
+113 silly addNameRange     '0.14.0-beta1',
+113 silly addNameRange     '0.14.0-beta2',
+113 silly addNameRange     '0.14.0-beta3',
+113 silly addNameRange     '0.14.0-rc1',
+113 silly addNameRange     '0.14.0',
+113 silly addNameRange     '0.14.1',
+113 silly addNameRange     '0.14.2',
+113 silly addNameRange     '0.14.3',
+113 silly addNameRange     '0.14.4',
+113 silly addNameRange     '0.14.5',
+113 silly addNameRange     '0.14.6',
+113 silly addNameRange     '0.15.0-alpha.1' ] ]
+114 silly addNamed react@0.13.3
+115 verbose addNamed "0.13.3" is a plain semver version for react
+116 silly mapToRegistry name react
+117 silly mapToRegistry using default registry
+118 silly mapToRegistry registry https://registry.npmjs.org/
+119 silly mapToRegistry uri https://registry.npmjs.org/react
+120 verbose addRemoteTarball https://registry.npmjs.org/react/-/react-0.13.3.tgz not in flight; adding
+121 verbose addRemoteTarball [ 'https://registry.npmjs.org/react/-/react-0.13.3.tgz',
+121 verbose addRemoteTarball   'a2dfa85335d7dc02b82b482f089582e64cc13356' ]
+122 silly cache afterAdd envify@3.4.0
+123 verbose afterAdd /Users/zyma/.npm/envify/3.4.0/package/package.json not in flight; writing
+124 info retry fetch attempt 1 at 2:14:32 PM
+125 info attempt registry request try #1 at 2:14:32 PM
+126 http fetch GET https://registry.npmjs.org/react/-/react-0.13.3.tgz
+127 verbose afterAdd /Users/zyma/.npm/envify/3.4.0/package/package.json written
+128 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+129 info attempt registry request try #2 at 2:15:57 PM
+130 http fetch GET https://registry.npmjs.org/react/-/react-0.13.3.tgz
+131 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+132 info attempt registry request try #3 at 2:18:13 PM
+133 http fetch GET https://registry.npmjs.org/react/-/react-0.13.3.tgz
+134 error fetch failed https://registry.npmjs.org/react/-/react-0.13.3.tgz
+135 warn retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+136 info retry fetch attempt 2 at 2:19:38 PM
+137 info attempt registry request try #1 at 2:19:38 PM
+138 http fetch GET https://registry.npmjs.org/react/-/react-0.13.3.tgz
+139 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+140 info attempt registry request try #2 at 2:21:03 PM
+141 http fetch GET https://registry.npmjs.org/react/-/react-0.13.3.tgz
+142 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.19.162:443
+143 info attempt registry request try #3 at 2:23:18 PM
+144 http fetch GET https://registry.npmjs.org/react/-/react-0.13.3.tgz
+145 http fetch 200 https://registry.npmjs.org/react/-/react-0.13.3.tgz
+146 silly fetchAndShaCheck shasum a2dfa85335d7dc02b82b482f089582e64cc13356
+147 verbose addTmpTarball /var/folders/g4/t3gz52lx2zvcqs6hhg5jzj040000gn/T/npm-20507-867a7656/registry.npmjs.org/react/-/react-0.13.3.tgz not in flight; adding
+148 verbose addTmpTarball already have metadata; skipping unpack for react@0.13.3
+149 silly cache afterAdd react@0.13.3
+150 verbose afterAdd /Users/zyma/.npm/react/0.13.3/package/package.json not in flight; writing
+151 verbose afterAdd /Users/zyma/.npm/react/0.13.3/package/package.json written
+152 verbose stack Error: connect ETIMEDOUT 185.31.19.162:443
+152 verbose stack     at Object.exports._errnoException (util.js:870:11)
+152 verbose stack     at exports._exceptionWithHostPort (util.js:893:20)
+152 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+153 verbose cwd /Users/zyma/Desktop/react-0.13.0/examples/basic-commonjs
+154 error Darwin 15.2.0
+155 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+156 error node v4.2.5
+157 error npm  v2.14.12
+158 error code ETIMEDOUT
+159 error errno ETIMEDOUT
+160 error syscall connect
+161 error network connect ETIMEDOUT 185.31.19.162:443
+161 error network This is most likely not a problem with npm itself
+161 error network and is related to network connectivity.
+161 error network In most cases you are behind a proxy or have bad network settings.
+161 error network
+161 error network If you are behind a proxy, please make sure that the
+161 error network 'proxy' config is set properly.  See: 'npm help config'
+162 verbose exit [ 1, true ]
