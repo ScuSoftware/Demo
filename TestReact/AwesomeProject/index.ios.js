@@ -18,7 +18,7 @@ import React, {
 } from 'react-native';
 
 var list_data = ['row 1', 'row 2'];
-var list_count = 1;
+var list_count = 2;
 
 class AwesomeProject extends Component {
   constructor(props) {
@@ -62,7 +62,7 @@ class AwesomeProject extends Component {
           list_count++;
           list_data.push('row'+list_count);
           that.setState({dataSource: this.state.dataSource.cloneWithRows(list_data)})
-      } , 1000);
+      } , 5000);
   }
 
   render() {
@@ -114,29 +114,6 @@ class AwesomeProject extends Component {
       </View>
     );
   }
-
-    //   var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    // dataSource: ds.cloneWithRows(['row 1', 'row 2']);
-
-          // <ListView
-          //   ref="listview"
-          //   dataSource={this.state.dataSource}
-          //   renderRow={this.renderRow}
-          // />
-
-  // renderRow:(
-  //   movie: Object,
-  //   sectionID: number | string,
-  //   rowID: number | string,
-  //   highlightRowFunc: (sectionID: ?number | string, rowID: ?number | string) => void,
-  // ) {
-  //   return (
-  //     <Text style={styles.instructions}>
-  //         Press Cmd+R to reload,{'\n'}
-  //         Cmd+D or shake for dev menu
-  //     </Text>
-  //   );
-  // }
 
 }
 
