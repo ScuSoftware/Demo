@@ -56,27 +56,30 @@ class AwesomeProject extends Component {
 
   componentDidMount(){
     var that = this;
-    var start = new Date().getTime();
-      setInterval(
-        ()=>{
-          list_count++;
-          list_data.push('row'+list_count);
-          that.setState({dataSource: this.state.dataSource.cloneWithRows(list_data)})
-      } , 5000);
+    // var start = new Date().getTime();
+    //   setInterval(
+    //     ()=>{
+    //       list_count++;
+    //       list_data.push('row'+list_count);
+    //       that.setState({dataSource: this.state.dataSource.cloneWithRows(list_data)})
+    //   } , 5000);
   }
 
   render() {
     return (
-
       <View style={styles.container}>
-        <Image
-          source={{uri: 'http://facebook.github.io/react/img/logo_og.png'}}
-          style={styles.image}
-        ></Image>
-         
-       <View>
+       
+       <View style={styles.flowLeft}>
          <ListView dataSource={this.state.dataSource}
-          renderRow={(rowData,rowHasChanged) => <Text>{rowData +':'+ rowHasChanged}</Text>}/>
+          renderRow={(rowData,rowHasChanged) =>
+            <View style={styles.flowRight}>
+              <Image
+                source={{uri: 'http://facebook.github.io/react/img/logo_og.png'}}
+                style={styles.image}/>
+              <Text style={styles.button}>
+                {rowData +':'+ rowHasChanged}
+              </Text>
+            </View> }/>
         </View>
 
         <Text style={styles.welcome}>
@@ -139,6 +142,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     alignSelf: 'stretch'
   },
+  flowLeft: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    alignSelf: 'stretch'
+  },
   button: {
     height: 36,
     flex: 1,
@@ -172,9 +180,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   image: { 
-    width: 40,
-    height: 40, 
-    marginRight: 10 
+    width: 35,
+    height: 35,
+    marginRight: 10,
+
   }
 });
 
